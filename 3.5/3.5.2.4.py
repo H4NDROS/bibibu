@@ -1,0 +1,27 @@
+from turtle import *
+def f():
+    pencolor('yellow')
+    fillcolor("yellow")
+    begin_fill()
+    circle(50)
+    end_fill()
+    penup()
+def s():
+    goto(0,150)
+    pendown()
+    pencolor('red')
+    fillcolor("red")
+    begin_fill()
+    circle(50)
+    end_fill()
+    penup()
+def t():
+    goto(0,-150)
+    pendown()
+    pencolor('green')
+    fillcolor("green")
+    begin_fill()
+    circle(50)
+    end_fill()
+print(f(),s(),t())
+exitonclick()

@@ -1,0 +1,21 @@
+import turtle
+def draw_sqr(leight, color):
+    t.color(color)
+    t.begin_fill()
+    for i in range(4):
+        t.forward(leight)
+        t.left(90)
+    t.end_fill()
+leight = int(turtle.textinput("Размер квадрата", "Введите сторону квадрата:"))
+turtle.setup(width=600, height=600)
+t = turtle.Turtle()
+t.begin_fill()
+t.end_fill()
+t.hideturtle()
+t.speed(6)
+t.penup()
+t.goto(0, 0)
+t.pendown()
+turtle.bgcolor("yellow")
+draw_sqr(leight, "green")
+turtle.done()

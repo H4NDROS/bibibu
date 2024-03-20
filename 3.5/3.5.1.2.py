@@ -1,0 +1,16 @@
+import turtle
+def draw_circle(radius, color):
+    turtle.color(color)
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+radius = int(turtle.textinput("Размер круга", "Введите радиус круга:"))
+turtle.setup(width=600, height=600)
+t = turtle.Turtle()
+t.hideturtle()
+t.speed(0)
+t.penup()
+t.goto(0, 0)
+t.pendown()
+draw_circle(radius, "blue")
+turtle.done()
